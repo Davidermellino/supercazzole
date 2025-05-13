@@ -1,0 +1,123 @@
+.blog-container {
+    margin-top: 75px;
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 2rem 0;
+  }
+  
+  .blog-title {
+    margin-bottom: 2rem;
+    color: var(--dark-green);
+  }
+  
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .blog-card {
+    display: flex;
+    padding: 10px;
+    border: 3px solid var(--dark-green);
+    background-color: var(--light-beige);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 280px;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-card-image-container {
+    width: 40%;
+    border-right: 2px solid var(--dark-green);
+  }
+  
+  .blog-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .blog-card-content {
+    width: 60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .blog-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .blog-card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-card-text {
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .blog-card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .blog-date {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .read-more-btn {
+    background-color: var(--dark-green);
+    color: var(--light-beige);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: var(--light-beige);
+    color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+  }
+  
+  @media (max-width: 992px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .blog-card {
+      height: auto;
+      flex-direction: column;
+    }
+    
+    .blog-card-image-container {
+      width: 100%;
+      height: 200px;
+      border-right: none;
+      border-bottom: 2px solid var(--dark-green);
+    }
+    
+    .blog-card-content {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
