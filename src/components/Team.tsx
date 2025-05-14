@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import { User } from 'lucide-react';
+import { User, UserX } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import getPlayers from '../utils/getPlayers';
 import './Team.css';
 
-const players = getPlayers(); // Ottieni la lista dei giocatori dal tuo fil
+const players = getPlayers();
 
 const Team = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -37,13 +37,25 @@ const Team = () => {
         <div className="team-grid">
           {players.map((player, index) => (
             <Link to={`/player/${index + 1}`} key={index} className="player-card">
-              {player.imgs ? (
-                <img src={player.imgs} alt={player.name} className="player-image" />
+              {player.presented ? (
+                <>
+                  {player.imgs ? (
+                    <img src={player.imgs} alt={player.name} className="player-image" />
+                  ) : (
+                    <User size={64} className="player-icon" />
+                  )}
+                  <h3 className="player-name">{player.name}</h3>
+                  <p className="player-position">{player.position}</p>
+                </>
               ) : (
-                <User size={64} className="player-icon" />
+                <>
+                  <div className="player-image-container p-4 ">
+                    <UserX size={64} className="player-icon mystery-icon" />
+                  </div>
+                  <h3 className="player-name">???</h3>
+                  <p className="player-position">???</p>
+                </>
               )}
-              <h3 className="player-name">{player.name}</h3>
-              <p className="player-position">{player.position}</p>
             </Link>
           ))}
         </div>

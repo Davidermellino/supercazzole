@@ -15,27 +15,47 @@ const getPlayers = () => {
       position: "PORTIERE",
       username: "Il boy scout",
       description: "Sempre pronto e affidabile come un vero boy scout, Luca è il guardiano dei pali. Spirito di servizio e sangue freddo fanno di lui un porto sicuro per la squadra.",
+      nationality: {
+        flag: "🇮🇹",
+        country: "Italia"
+      },
+      presented: true,
       imgs: player1
     },
     {
       name: "DAVIDE ERMELLINO",
-      position: "JOLLY",
+      position: "LO CHEF",
       username: "El crack",
       description: "Classe pura e giocate da fuoriclasse: Davide è il talento che accende il gioco con colpi imprevedibili, scatti, salti, tiri ( in qualsiasi senso ). Ogni tocco racconta una storia di tecnica e istinto.",
+      nationality: {
+        flag: "🇵🇹",
+        country: "Portogallo"
+      },
+      presented: false,
       imgs: player2
     },
     {
-      name: "LUCA AGUS",
-      position: "JOLLY",
+      name: "LUCA \nAGUS",
+      position: "OSTEOPATA",
       username: "El pube de oro",
       description: "Genio precoce e stile irriverente, Luca incanta il campo con la sua fantasia. Freschezza e audacia sono il suo marchio di fabbrica.",
+      nationality: {
+        flag: "🇦🇷",
+        country: "Argentina"
+      },
+      presented: true,
       imgs: player3
     },
     {
       name: "ALBERTO CORADDU",
-      position: "JOLLY",
+      position: "PENNA",
       username: "rudi",
-      description: "Grinta senza compromessi e spirito ruvido: Alberto è l’anima operaia della squadra. Un combattente nato che non si risparmia mai.",
+      description: "Grinta senza compromessi e spirito ruvido: Alberto è l'anima operaia della squadra. Un combattente nato che non si risparmia mai.",
+      nationality: {
+        flag: "🇮🇹",
+        country: "Italia"
+      },
+      presented: false,
       imgs: player4
     },
     {
@@ -43,27 +63,47 @@ const getPlayers = () => {
       position: "JOLLY",
       username: "anonymus",
       description: "Silenzioso fuori, esplosivo in campo. Lorenzo colpisce quando meno te lo aspetti, con incursioni rapide e giocate sorprendenti.",
+      nationality: {
+        flag: "🇮🇹",
+        country: "Italia"
+      },
+      presented: false,
       imgs: player5
     },
     {
       name: "MATTIA PINNA",
-      position: "JOLLY",
+      position: "INTERNAL POINTER",
       username: "Little endian",
-      description: "Pensiero logico e precisione da programmatore: Mattia organizza il gioco con ordine e visione. È l’algoritmo vivente del centrocampo.",
+      description: "Pensiero logico e precisione da programmatore: Mattia organizza il gioco con ordine e visione. È l'algoritmo vivente del centrocampo.",
+      nationality: {
+        flag: "🇮🇳",
+        country: "India"
+      },
+      presented: false,
       imgs: player6
     },
     {
       name: "LORENZO MARONGIU",
-      position: "JOLLY",
+      position: "IRIDE",
       username: "Dj lopez",
-      description: "Ritmo costante e vibrazioni giuste: Lorenzo è il metronomo della squadra. Sempre sul beat, tiene alta l’energia con un pressing incessante.",
+      description: "Ritmo costante e vibrazioni giuste: Lorenzo è il metronomo della squadra. Sempre sul beat, tiene alta l'energia con un pressing incessante.",
+      nationality: {
+        flag: "🇮🇹",
+        country: "Italia"
+      },
+      presented: false,
       imgs: player7
     },
     {
       name: "GIANLUCA DASARA",
-      position: "JOLLY",
+      position: "ARAGOSTA",
       username: "sampei",
       description: "Come un pescatore paziente, Gianluca sa aspettare il momento giusto per colpire. Calma apparente e decisioni letali quando serve.",
+      nationality: {
+        flag: "🌊",
+        country: "Oceano Pacifico"
+      },
+      presented: false,
       imgs: player8
     },
   ];

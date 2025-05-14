@@ -1,4 +1,5 @@
 import React ,{useEffect} from "react";
+import { Navigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { User } from 'lucide-react';
 import getPlayers from "../utils/getPlayers";
@@ -18,6 +19,8 @@ const PlayerProfile = () => {
     window.scrollTo(0,0);
  }, [])
 
+
+ if (player.presented) {
   return (
     <div className="container py-5 mt-5 page">
       <div className="row mb-5">
@@ -51,8 +54,8 @@ const PlayerProfile = () => {
             <div className="card-body">
               <h3 className="h5 mb-3 fw-bold">Nazionalità</h3>
               <div className="d-flex align-items-center">
-                <span className="flag-icon">🇮🇹</span>
-                <p className="mb-0 ms-3">Italiana</p>
+                <span className="flag-icon">{player.nationality.flag}</span>
+                <p className="mb-0 ms-3">{player.nationality.country}</p>
               </div>
             </div>
           </div>
@@ -67,6 +70,13 @@ const PlayerProfile = () => {
       </div>
     </div>
   );
+ }else{
+  return (
+    <div className="mt-5 row">
+      <h1 className="lead fs-1 text-center">GIOCATORE NON ANCORA PRESENTATO... ASPETTA</h1>
+    </div>
+  )
+}
 };
 
 export default PlayerProfile;
