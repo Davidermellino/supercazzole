@@ -49,7 +49,7 @@ const Team = () => {
                 </>
               ) : (
                 <>
-                  <div className="player-image-container p-4 ">
+                  <div className="not-pres-image-container p-4 ">
                     <UserX size={64} className="player-icon mystery-icon" />
                   </div>
                   <h3 className="player-name">???</h3>
