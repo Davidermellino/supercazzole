@@ -55,7 +55,7 @@ const getPlayers = () => {
         flag: "🌊",
         country: "Oceano Pacifico"
       },
-      presented: false,
+      presented: true,
       imgs: player8
     },
     {
