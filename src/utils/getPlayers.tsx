@@ -46,6 +46,18 @@ const getPlayers = () => {
       presented: true,
       imgs: player3
     },
+{
+      name: "GIANLUCA DASARA",
+      position: "PROFESSORE DISSOCIATO",
+      username: "sampei",
+      description: "Come un pescatore paziente, Gianluca sa aspettare il momento giusto per colpire. Calma apparente e decisioni letali quando serve.",
+      nationality: {
+        flag: "🌊",
+        country: "Oceano Pacifico"
+      },
+      presented: false,
+      imgs: player8
+    },
     {
       name: "ALBERTO CORADDU",
       position: "PENNA",
@@ -93,19 +105,8 @@ const getPlayers = () => {
       },
       presented: false,
       imgs: player7
-    },
-    {
-      name: "GIANLUCA DASARA",
-      position: "ARAGOSTA",
-      username: "sampei",
-      description: "Come un pescatore paziente, Gianluca sa aspettare il momento giusto per colpire. Calma apparente e decisioni letali quando serve.",
-      nationality: {
-        flag: "🌊",
-        country: "Oceano Pacifico"
-      },
-      presented: false,
-      imgs: player8
-    },
+    }
+    
   ];
   
   return players;
