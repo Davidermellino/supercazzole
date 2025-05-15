@@ -36,7 +36,7 @@ const getPlayers = () => {
     },
     {
       name: "LUCA AGUS",
-      position: "OSTEOPATA",
+      position: "PROFESSORE ASSOCIATO",
       username: "El pube de oro",
       description: "Genio precoce e stile irriverente, Luca incanta il campo con la sua fantasia. Freschezza e audacia sono il suo marchio di fabbrica.",
       nationality: {
