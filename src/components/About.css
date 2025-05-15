@@ -1,0 +1,159 @@
+.about {
+  background-color: var(--dark-green);
+  color: var(--light-beige);
+  padding: 150px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.about-title {
+  font-size: 48px;
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--light-beige);
+}
+
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.about-column {
+  flex: 1;
+}
+
+.column-title {
+  font-size: 28px;
+  margin-bottom: 32px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.column-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background-color: var(--light-beige);
+}
+
+.values-list {
+  list-style: none;
+}
+
+.values-list li {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.value-number {
+  font-size: 36px;
+  margin-right: 24px;
+  opacity: 0.5;
+}
+
+.value-content h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.value-content p {
+  line-height: 1.6;
+}
+
+.spirit-text {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 100px 0;
+  }
+  
+  .about-title {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+  
+  .about-columns {
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  .column-title {
+    font-size: 24px;
+  }
+  
+  .value-number {
+    font-size: 30px;
+  }
+  
+  .value-content h4 {
+    font-size: 20px;
+  }
+  
+  .spirit-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 80px 0;
+  }
+  
+  .about-content {
+    padding: 0 16px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .column-title {
+    font-size: 22px;
+  }
+  
+  .value-number {
+    font-size: 24px;
+  }
+  
+  .value-content h4 {
+    font-size: 18px;
+  }
+  
+  .spirit-text {
+    font-size: 16px;
+  }
+}
