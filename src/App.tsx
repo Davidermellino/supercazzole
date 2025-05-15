@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react"
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ import BlogPost from "./pages/BlogPost";
 function App() {
   return (
     <div className="app-container">
+      <Analytics />
       <Header />
       <main className="main-content container min-vh-100 py-5
 ">
