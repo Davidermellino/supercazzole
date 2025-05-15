@@ -35,7 +35,7 @@ const getPlayers = () => {
       imgs: player2
     },
     {
-      name: "LUCA \nAGUS",
+      name: "LUCA AGUS",
       position: "OSTEOPATA",
       username: "El pube de oro",
       description: "Genio precoce e stile irriverente, Luca incanta il campo con la sua fantasia. Freschezza e audacia sono il suo marchio di fabbrica.",
@@ -72,14 +72,14 @@ const getPlayers = () => {
     },
     {
       name: "MATTIA PINNA",
-      position: "INTERNAL POINTER",
+      position: "GIRAFFA",
       username: "Little endian",
       description: "Pensiero logico e precisione da programmatore: Mattia organizza il gioco con ordine e visione. È l'algoritmo vivente del centrocampo.",
       nationality: {
         flag: "🇮🇳",
         country: "India"
       },
-      presented: false,
+      presented: true,
       imgs: player6
     },
     {
