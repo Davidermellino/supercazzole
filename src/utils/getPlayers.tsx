@@ -31,7 +31,7 @@ const getPlayers = () => {
         flag: "🇵🇹",
         country: "Portogallo"
       },
-      presented: false,
+      presented: true,
       imgs: player2
     },
     {
@@ -67,7 +67,7 @@ const getPlayers = () => {
         flag: "🇮🇹",
         country: "Italia"
       },
-      presented: false,
+      presented: true,
       imgs: player4
     },
     {
