@@ -103,7 +103,7 @@ const getPlayers = () => {
         flag: "🇮🇹",
         country: "Italia"
       },
-      presented: false,
+      presented: true,
       imgs: player7
     }
     
